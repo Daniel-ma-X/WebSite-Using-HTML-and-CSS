@@ -51,7 +51,6 @@ header nav ul li a:hover {
 }
 
 /*main*/
-
 main .section-1 img{
     width: 100%;
     height: 100vh;
@@ -61,8 +60,21 @@ main .section-1 h1 {
     font-size: 6rem;
     color: white;
     position: absolute;
-    bottom: 30%;
-    left: 25%;
+    bottom: 300px;
+    left: 50px;
+}
+
+main .main-subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: darkred;
+    text-transform: uppercase;
+}
+
+main .main-subtitle span {
+    color: pink;
 }
 
 main .section-2, main .section-3 {
@@ -122,3 +134,199 @@ main .section-3 figure img {
 main .section-3 h3 span {
     color: green;
 } 
+
+/*sección de cajas de aprendizaje*/
+
+main .bottom-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+     
+}
+
+main .box-subtitle {
+    text-align: center;
+    color: darkslategray;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+main .box-subtitle span {
+    color: dodgerblue;
+}
+main .box {
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+
+main .box figure {
+    width: 150px;
+    height:120px;
+    margin: 10px auto;
+}
+
+main .box figure img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+main .box h2 {
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+main .box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+main .box-1 {
+    border: 3px solid orangered;
+    border-radius: 10px;
+}
+
+main .box-1 h2 span {
+    color: orangered;
+}
+
+main .box-2 {
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+
+main .box-2 h2 span {
+    color: rgb(0, 0, 255);
+}
+
+main .box-3 {
+    border: 3px solid rgba(240, 240, 7, 0.836);
+    border-radius: 10px;
+}
+
+main .box-4 {
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+}
+/*sección de referencias*/
+
+main .section-5 {
+    width: 90%;
+    margin: 40px auto;
+}
+
+main .ref {
+    width: 100%;
+    padding: 17px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+main .ref h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+main .ref h3 {
+    font-size: 2rem;
+    padding: 5px 0;
+}
+
+main .ref p {
+    text-align: justify;
+}
+
+main .ref figure {
+    margin: 20px auto 0;
+    width: 120px;
+    height: 110px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+main .ref figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main .referencia-1 {
+    border: 3px solid #A9DFBF ;
+    background-color: #D4EFDF 
+}
+
+main .referencia-2 {
+    border: 3px solid #85C1E9 ;
+    background-color: #D6EAF8 ;
+}
+
+main .referencia-3 {
+    border: 3px solid #D98880;
+    background-color: #FADBD8;
+}
+/*sección de contacto*/
+
+main .hr-contacto {
+    width: 90%;
+    height: 5px;
+    background-color: rgb(100, 100, 214);
+}
+
+main .contacto {
+}
+
+main .inputs {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+ 
+main .inputs h2 {
+    font-weight: bolder;
+}
+main .inputs label {
+    display: block;
+    margin: 10px 0; 
+}
+
+main .inputs span {
+    font-size: 1.7rem;
+    padding-right: 10px;
+}
+
+main .inputs label input {
+    padding: 5px;
+    width: 350px;
+}
+
+main .inputs .span-texta {
+    display: block;
+}
+
+main .inputs .btn {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/*footer*/
+
+ footer {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+footer span {
+    color: #3498DB;
+    padding-left: 7px;
+}
