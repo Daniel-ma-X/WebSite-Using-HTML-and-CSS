@@ -24,6 +24,13 @@ header {
     z-index: 100000;
 }
 
+header .header-icon-menu {
+    display: none;
+    font-size: 3rem;
+    margin-right: 20px;
+    color: black;
+}
+
 header h2 {
     font-size: 2.5rem;
     font-weight: bolder;
@@ -90,7 +97,8 @@ main .section-2 {
 }
 
 main .section-2 .section-video video {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -101,7 +109,8 @@ main h2, main h3 {
 }
 
 hr {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: 10px auto;
 }
 
@@ -120,13 +129,15 @@ main .section-3 {
     text-align: center;
 }
 main .section-3 figure {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     margin: 0 auto;
 }
 
 main .section-3 figure img {
     width: 100%;
+    max-width: 500px;
     height: auto;
     border-radius: 15px;
 }
@@ -329,4 +340,69 @@ main .inputs .btn {
 footer span {
     color: #3498DB;
     padding-left: 7px;
+}
+
+/*media queries*/
+
+/*max-wdith 768px -- Tablets*/
+@media screen and (max-width: 768px) {
+ 
+    /*header*/
+    header nav {
+        display: none;
+    }
+
+    header .header-icon-menu {
+        display: inline-block;
+    }
+
+    /*secciones*/
+
+    main .section-1 img {
+        max-height: 80vh;
+    }
+
+    main .section-1 h1 {
+        bottom: 350px;
+    }
+}
+
+/*max-width 480px -- Tamaño medio*/
+
+@media screen and (max-width: 480px) {
+
+    header {
+        height: 80px;
+        font-size: 3rem;
+    }
+    
+    main .section-3 figure {
+        width: 100em;
+    }
+
+    main .section-3 {
+        width: 100vw;
+    }
+
+    hr {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    main .section-3 figure {
+        display: none;
+    }
+
+    main .contacto .inputs h2 {
+        font-size: 4rem;
+    }
+
+    main .contacto .inputs span {
+        font-size: 3.2rem;
+    }
+
+    main .contacto .inputs input {
+        font-size: 3rem;
+        padding: 20px;
+    }
 }
